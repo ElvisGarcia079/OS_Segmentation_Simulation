@@ -37,6 +37,7 @@ public class OS {
 	
 	
 	public byte getDataAtVirtAddress(int virtAddress) throws Exception {
+		//This method will get the vitual address given bit information provided in file.
 		int numVpnBits = (int) Math.ceil(Math.log(numPages) / Math.log(2));
 		int numOffsetBits = (int) Math.ceil(Math.log(numBytes) / Math.log(2));
 		int numBitsNeeded = numVpnBits + numOffsetBits;
